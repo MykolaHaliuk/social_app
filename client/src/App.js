@@ -1,46 +1,54 @@
-import React, { useContext, useEffect, useState } from "react";
-import LoginForm from "./components/LoginForm";
-import { Context } from "./index";
+import { useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+
+// import Home from "./pages/home/Home";
+import Login from "./pages/login/Login";
+// import Profile from "./pages/profile/Profile";
+import Register from "./pages/register/Register";
+
+// import Messenger from "./pages/messenger/Messenger";
+import { useAuthContext } from "./context/use-auth-context";
 import { observer } from "mobx-react-lite";
-import UserService from "./services/UserService";
+import { Box, CircularProgress } from "@mui/material";
+
 
 function App() {
-  const { store } = useContext(Context);
-  const [users, setUsers] = useState([]);
-
+  const { authStore } = useAuthContext();
   useEffect(() => {
     if(localStorage.getItem("token")){
-      store.checkAuth();
+      authStore.checkAuth();
     }
   }, []);
-  if(store.isLoading){
-    return "..."
-  }
-  console.log("-> sto312312re", store);
-  if(!store.isAuth){
-    return   <LoginForm />
-  }
 
-  async function getUsers(){
-    try {
-      const response = await UserService.getUsers();
-      setUsers(response.data);
-    } catch (e) {
-      console.log("-> 12312312e", e);
-    }
+  if(authStore.isLoading){
+    return <Box sx={{ display: "flex", alignItems: "center" }}>
+      <CircularProgress />
+    </Box>;
   }
+  console.log("-> authStore.isAuth132", authStore.isAuth );
   return (
-    <div>
-      <h1> {store.isAuth ? "OK": "ne ok"}</h1>
-      <h1>{store.user.isActivated ? "Активований" : "Не активований"}</h1>
-      <button onClick={() => store.logout()}>Вийти</button>
-      <div>
-        <button onClick={() => getUsers()}>Get User</button>
-      </div>
-      {users.map((u) =>
-        <div key={u.email}>{u.email}</div>
-      )}
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          {authStore.isAuth ? 123 : <Register />}
+        </Route>
+        <Route path="/login">{authStore.isAuth ? <Redirect to="/" /> : <Login />}</Route>
+        {/*<Route path="/register">*/}
+        {/*  {authStore.isAuth ? <Redirect to="/" /> : <Register />}*/}
+        {/*</Route>*/}
+        {/*<Route path="/messenger">*/}
+        {/*  {!authStore.isAuth ? <Redirect to="/" /> : <Messenger />}*/}
+        {/*</Route>*/}
+        {/*<Route path="/profile/:username">*/}
+        {/*  <Profile />*/}
+        {/*</Route>*/}
+      </Switch>
+    </Router>
   );
 }
 

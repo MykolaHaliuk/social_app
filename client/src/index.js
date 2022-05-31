@@ -1,21 +1,13 @@
-import React, { createContext } from "react";
-import ReactDOM from "react-dom";
+import React from "react";
+import ReactDOM from "react-dom/client";
 import App from "./App";
-import Store from "./store/store";
-import LoginForm from "./components/LoginForm";
+import AuthStore from "./store/auth-store";
+import { AuthContext } from "./context/auth-context";
+const authStore = new AuthStore();
 
-const store = new Store();
-
-export const Context = createContext({
-  store
-});
-
-ReactDOM.render(
-  <Context.Provider value={{
-    store
-  }}>
-    <App />
-  </Context.Provider>
-,
-  document.getElementById("root")
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+    <AuthContext.Provider value={{ authStore }}>
+      <App />
+    </AuthContext.Provider>
 );

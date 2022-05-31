@@ -132,7 +132,6 @@ class UserService {
       throw ApiError.Forbidden();
     }
   }
-
   async unfollow(id, userId){
     if (userId !== id) {
       const user = await UserModel.findById(id);
@@ -148,9 +147,6 @@ class UserService {
       throw ApiError.Forbidden();
     }
   }
-
-
-
 }
 
 module.exports = new UserService();

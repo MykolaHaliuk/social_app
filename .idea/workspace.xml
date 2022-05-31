@@ -1,9 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15e4bdbe-12be-44d1-b95a-d7a697b246c4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socket/.gitignore" afterDir="false" />
+    <list default="true" id="15e4bdbe-12be-44d1-b95a-d7a697b246c4" name="Changes" comment="init commit">
+      <change afterPath="$PROJECT_DIR$/client-old/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-old/src/http/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-old/src/services/AuthService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-old/src/services/UserService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-old/src/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Add.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Feed.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Navbar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Post.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Rigthbar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Sidebar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/chatOnline/ChatOnline.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/chatOnline/chatOnline.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/closeFriend/CloseFriend.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/closeFriend/closeFriend.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/conversations/Conversation.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/conversations/conversation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/feed/Feed.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/feed/feed.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/message/Message.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/message/message.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/online/Online.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/online/online.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/post/Post.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/post/post.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/rightbar/Rightbar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/rightbar/rightbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/share/Share.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/share/share.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/sidebar/Sidebar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/sidebar/sidebar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/topbar/Topbar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/topbar/topbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/auth-context.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/use-auth-context.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/home/Home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/home/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/login/Login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/messenger/Messenger.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/messenger/messenger.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/profile/Profile.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/profile/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/register/Register.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/store/auth-store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/ad.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/ad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/gift.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/gift.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/heart.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/heart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/like.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/like.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/person/1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/person/1.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/person/10.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/person/10.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/person/2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/person/2.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/person/3.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/person/3.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/person/4.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/person/4.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/person/5.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/person/5.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/person/6.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/person/6.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/person/7.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/person/7.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/person/8.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/person/8.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/person/9.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/person/9.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/person/noAvatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/person/noAvatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/person/noCover.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/person/noCover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/post/1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/post/1.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/post/10.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/post/10.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/post/2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/post/2.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/post/3.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/post/3.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/post/4.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/post/4.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/post/5.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/post/5.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/post/6.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/post/6.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/post/7.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/post/7.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/post/8.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/post/8.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/post/9.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/post/9.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/public/assets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/apiCalls.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/apiCalls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/chatOnline/ChatOnline.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/chatOnline/ChatOnline.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/chatOnline/chatOnline.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/chatOnline/chatOnline.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/closeFriend/CloseFriend.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/closeFriend/CloseFriend.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/closeFriend/closeFriend.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/closeFriend/closeFriend.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/conversations/Conversation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/conversations/Conversation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/conversations/conversation.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/conversations/conversation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/feed/Feed.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/feed/Feed.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/feed/feed.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/feed/feed.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/message/Message.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/message/Message.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/message/message.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/message/message.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/online/Online.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/online/Online.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/online/online.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/online/online.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/post/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/post/Post.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/post/post.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/post/post.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/rightbar/Rightbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/rightbar/Rightbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/rightbar/rightbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/rightbar/rightbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/share/Share.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/share/Share.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/share/share.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/share/share.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/sidebar/Sidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/sidebar/sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/sidebar/sidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/topbar/Topbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/topbar/Topbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/components/topbar/topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/components/topbar/topbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/context/AuthActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/context/AuthActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/context/AuthContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/context/AuthContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/context/AuthReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/context/AuthReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/dummyData.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/dummyData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/pages/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/pages/home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/pages/home/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/pages/home/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/pages/login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/pages/login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/pages/login/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/pages/login/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/pages/messenger/Messenger.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/pages/messenger/Messenger.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/pages/messenger/messenger.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/pages/messenger/messenger.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/pages/profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/pages/profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/pages/profile/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/pages/profile/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/pages/register/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/pages/register/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src-old/pages/register/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src-old/pages/register/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src/components/LoginForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/http/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/http/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/services/AuthService.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/services/AuthService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client-old/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/service/user-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/service/user-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/socket/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +143,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -30,29 +163,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="16.14.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="16.11.33" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/old-api" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.standard" value="true" />
-    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/server/node_modules/eslint" />
-    <property name="node.js.selected.package.standard" value="" />
-    <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/context" />
+      <recent name="$PROJECT_DIR$/client/src" />
+      <recent name="$PROJECT_DIR$/client/src/components" />
+      <recent name="$PROJECT_DIR$/client" />
       <recent name="$PROJECT_DIR$/old-api" />
-      <recent name="$PROJECT_DIR$/server" />
-      <recent name="$PROJECT_DIR$/socket" />
-      <recent name="$PROJECT_DIR$/server/models" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -94,8 +220,30 @@
       <workItem from="1652076012253" duration="1130000" />
       <workItem from="1652078678079" duration="8193000" />
       <workItem from="1652092295402" duration="3810000" />
-      <workItem from="1652100981234" duration="123000" />
+      <workItem from="1652100981234" duration="1990000" />
+      <workItem from="1652103447402" duration="72000" />
+      <workItem from="1652103538325" duration="101000" />
+      <workItem from="1652103660244" duration="126000" />
+      <workItem from="1652103921746" duration="2044000" />
+      <workItem from="1652106022070" duration="31000" />
+      <workItem from="1652106065843" duration="111000" />
+      <workItem from="1652106181689" duration="10166000" />
+      <workItem from="1652167001033" duration="595000" />
+      <workItem from="1652209807235" duration="7892000" />
+      <workItem from="1652249568702" duration="26000" />
+      <workItem from="1652290117134" duration="15582000" />
+      <workItem from="1652339094173" duration="48000" />
+      <workItem from="1652539951698" duration="1323000" />
+      <workItem from="1652681414596" duration="594000" />
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <created>1652101295841</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652101295841</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +259,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
