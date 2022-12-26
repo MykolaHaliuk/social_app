@@ -1,18 +1,39 @@
-import Topbar from "../../components/topbar/Topbar";
-import Sidebar from "../../components/sidebar/Sidebar";
-import Feed from "../../components/feed/Feed";
-import Rightbar from "../../components/rightbar/Rightbar";
-import "./home.css"
+import { Grid } from "@mui/material";
+//import { makeStyles } from '@mui/styles';
+import { makeStyles } from '@mui/styles';
+import Add from "../../components/Add";
+import Feed from "../../components/Feed";
+import SideBar from "../../components/Sidebar";
+import Navbar from "../../components/Navbar"
+import RightBar from "../../components/Rigthbar";
 
-export default function Home() {
+// const useStyles = makeStyles((theme) => ({
+//   right: {
+//     [theme.breakpoints.down("sm")]: {
+//       display: "none",
+//     },
+//   },
+// }));
+
+const Home = () => {
+  // const classes = useStyles();
   return (
-    <>
-      <Topbar />
-      <div className="homeContainer">
-        <Sidebar />
-        <Feed/>
-        <Rightbar/>
-      </div>
-    </>
+    <div>
+      <Navbar />
+      <Grid container>
+        <Grid item sm={2} xs={2}>
+          <SideBar />
+        </Grid>
+        <Grid item sm={7} xs={10}>
+          <Feed />
+        </Grid>
+        <Grid item sm={3}>
+          <RightBar />
+        </Grid>
+      </Grid>
+      <Add />
+    </div>
   );
-}
+};
+
+export default Home;

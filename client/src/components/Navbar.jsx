@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-import { AppBar, Avatar, Badge, Box, InputBase, Menu, MenuItem, styled, Toolbar, Typography } from "@mui/material";
+import { AppBar, Avatar, Badge, Box, Menu, MenuItem, styled, Toolbar, Typography } from "@mui/material";
 import { Facebook, Mail, Notifications } from "@mui/icons-material";
+import { useHistory } from "react-router-dom";
+import { useAuthContext } from "../context/use-auth-context";
+import { observer } from "mobx-react-lite";
 
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
@@ -33,19 +36,20 @@ const UserBox = styled(Box)(({ theme}) => ({
 }));
 
 const Navbar = () => {
+  const history = useHistory();
+  const { authStore } = useAuthContext();
   const [open, setOpen] = useState(false);
-
+  console.log("=>(Nav123123123123123e", ...authStore.user);
   return (
     <AppBar position="sticky">
       <StyledToolbar>
         <Typography variant="h6" sx={{display: {xs:"none", sm:"block"}}}>
-          Dudu
+          єДрузі
         </Typography>
         <Facebook sx={{display: {xs:"block", sm:"none"}}}/>
-        <Search><InputBase placeholder={"Пошук..."}/></Search>
         <Icons>
           <Badge badgeContent={4} color="error">
-            <Mail />
+            <Mail onClick={() => history.push("/messenger")}/>
           </Badge>
           <Badge badgeContent={4} color="error">
             <Notifications />
@@ -80,4 +84,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default observer(Navbar);
